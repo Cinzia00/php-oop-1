@@ -1,14 +1,12 @@
 <?php
 
-class movies {
-    public $titoloOriginale;
+class Movie {
     public $titolo;
     public $genere;
     public $durata;
     public $lingua;
     public $annoDiUscita;
 
-    var_dump($movies)
    
 
     
@@ -20,8 +18,8 @@ class movies {
     
     public function calcolaAnniUscita() {
         $annoCorrente = date('Y');
-        $annoCorrente - $this->annoDiUscita;
-        var_dump($annoCorrente);
+        $anni = $annoCorrente - $this->annoDiUscita;
+        return $anni;
     }
    
 
